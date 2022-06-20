@@ -1,0 +1,57 @@
+html p, li {
+  @media (max-width: 650px) {
+    font-size: 16px !important;
+  }
+}
+
+html h1, h2 {
+  @media (max-width: 650px) {
+    font-size: 22px !important;
+  }
+}
+
+body {
+  background-color: white;
+  color: black;
+  font-family: 'Uni Neue', sans-serif;
+  line-height: 1.35;
+  font-size: 22px;
+}
+
+main {
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 1144px;
+  margin: 0 auto;
+
+  @media (max-width: 1150px) {
+    padding: 0 30px;
+  }
+
+  @media (max-width: 650px) {
+    padding: 0;
+    width: 300px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  margin: -1px;
+  clip: rect(0 0 0 0);
+}
+
+i.rub {
+  font-family: 'als_rublregular';
+  font-weight: normal;
+  text-transform: none;
+  font-style: normal;
+}

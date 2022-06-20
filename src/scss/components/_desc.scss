@@ -1,0 +1,168 @@
+.desc {
+  background-color: #8d75d0;
+  @include bg;
+  background-image: url('/src/img/bgs/desc-bg.jpg');
+  padding-bottom: 100px;
+
+  @media (max-width: 1150px) {
+    padding-bottom: 50px;
+  }
+
+  @media (max-width: 650px) {
+    padding-bottom: 30px;
+  }
+}
+
+.desc__title {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-family: 'Uni Sans';
+  font-size: 50px;
+  max-width: 918px;
+  line-height: 1;
+
+  @media (max-width: 1150px) {
+    font-size: 40px;
+  }
+
+  @media (max-width: 991px) {
+    font-size: 30px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 25px;
+  }
+}
+
+.desc__subtitle {
+  background: linear-gradient(
+    90.91deg,
+    rgba(71, 18, 157, 0.9) 0%,
+    rgba(255, 188, 173, 0.9) 100%
+  );
+  border-radius: 5px;
+  margin-bottom: 40px;
+  font-size: 50px;
+  font-weight: 800;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: white;
+  @include max-width(834px);
+  line-height: 1;
+  padding-bottom: 10px;
+
+  @media (max-width: 1150px) {
+    font-size: 40px;
+  }
+
+  @media (max-width: 991px) {
+    font-size: 30px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 25px;
+  }
+
+  @media (max-width: 650px) {
+    margin-bottom: 20px;
+    padding-bottom: 4px;
+  }
+}
+
+.desc__text {
+  color: #fdd3ee;
+  font-size: 30px;
+  line-height: 1;
+  margin-bottom: 37px;
+  max-width: 729px;
+
+  @media (max-width: 991px) {
+    font-size: 26px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 22px;
+  }
+
+  @media (max-width: 650px) {
+    margin-bottom: 20px;
+  }
+}
+
+.desc__slider-box {
+  margin-bottom: 47px;
+
+  @media (max-width: 650px) {
+    margin-bottom: 10px;
+  }
+}
+
+.desc__slider-pagination {
+  position: relative;
+  bottom: 0 !important;
+  margin-top: 5px;
+}
+
+.desc__slider-wrapper {
+  flex-wrap: wrap;
+  gap: 20px 50px;
+
+  @media (max-width: 650px) {
+    gap: 0px;
+    flex-wrap: initial;
+    justify-content: initial;
+  }
+}
+
+.desc__slide {
+  width: auto !important;
+  padding-left: 60px;
+  position: relative;
+  color: white;
+
+  @media (max-width: 650px) {
+    max-width: 300px;
+    width: 300px !important;
+    font-size: 16px;
+    padding-left: 50px;
+  }
+
+  @for $i from 1 through 3 {
+    &:nth-child(#{$i})::before {
+      background-image: url('/src/img/icons/desc/#{$i}.svg');
+    }
+  }
+
+  &::before {
+    width: 51px;
+    height: 55px;
+    @include bg;
+    content: '';
+    position: absolute;
+    left: 0;
+    @include y-align;
+
+    @media (max-width: 650px) {
+      zoom: 0.7;
+    }
+  }
+}
+
+.desc__btn {
+  display: none;
+
+  @media (max-width: 650px) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.desc__form {
+  @media (max-width: 650px) {
+    display: none;
+  }
+}

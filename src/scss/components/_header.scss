@@ -1,0 +1,104 @@
+.header {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @media (max-width: 1150px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  @media (max-width: 650px) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: center;
+}
+
+.header__left-side {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header__logo {
+  @media (max-width: 650px) {
+    width: 80px;
+    height: auto;
+  }
+}
+
+.header__text {
+  font-family: 'DIN Pro';
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #fdd3ee;
+  line-height: 1.21;
+
+  @media (max-width: 650px) {
+    display: none;
+  }
+}
+
+.header__contact-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  position: relative;
+  padding-left: 27px;
+  flex-shrink: 0;
+
+  @media (max-width: 650px) {
+    gap: 2px;
+  }
+
+  &:hover::before {
+    transform: rotate(20deg);
+  }
+
+  &::before {
+    left: 0;
+    top: 17px;
+    position: absolute;
+    width: 26px;
+    height: 29px;
+    @include bg;
+    background-image: url('/src/img/icons/phone.svg');
+    content: '';
+    transition: transform 0.5s;
+
+    @media (max-width: 650px) {
+      top: 8px;
+    }
+  }
+}
+
+.header__phone {
+  @include reset-link(white);
+  color: white;
+  font-family: 'Uni Sans';
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 1.2;
+
+  @media (max-width: 650px) {
+    font-size: 16px;
+  }
+}
+
+.header__callback {
+  @include reset-btn;
+  font-size: 15px;
+  color: white;
+  text-decoration: underline;
+
+  @media (max-width: 650px) {
+    font-size: 14px;
+  }
+}

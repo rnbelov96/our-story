@@ -1,0 +1,14 @@
+<svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.5">
+<line x1="1" y1="-1" x2="8.48277" y2="-1" transform="matrix(0.711161 0.703029 -0.711161 0.703029 9.32159 1.72217)" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<path d="M10.7439 12.2778L16.0654 7.01723" stroke="black" stroke-width="2" stroke-linecap="round"/>
+</g>
+<g opacity="0.25">
+<line x1="1" y1="-1" x2="8.48277" y2="-1" transform="matrix(0.711161 0.703029 -0.711161 0.703029 4.66083 1.72217)" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<path d="M6.08313 12.2778L11.4046 7.01723" stroke="black" stroke-width="2" stroke-linecap="round"/>
+</g>
+<g opacity="0.15">
+<line x1="1" y1="-1" x2="8.48277" y2="-1" transform="matrix(0.711161 0.703029 -0.711161 0.703029 6.10352e-05 1.72217)" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<path d="M1.42236 12.2778L6.74382 7.01723" stroke="black" stroke-width="2" stroke-linecap="round"/>
+</g>
+</svg>

@@ -1,0 +1,157 @@
+.animate {
+  opacity: 0;
+}
+
+.animate.animateY {
+  -webkit-transform: translateY(-30px);
+  transform: translateY(-30px);
+}
+
+.animate.animateY.animated {
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px);
+}
+
+.animate.animateY:nth-child(1),
+.animate.animateY:nth-child(4) {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+.animate.animateY:nth-child(2),
+.animate.animateY:nth-child(5) {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.animate.animateY:nth-child(3),
+.animate.animateY:nth-child(6) {
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+.animate.animateX {
+  -webkit-transform: translateX(-30px);
+  transform: translateX(-30px);
+}
+
+.animate.animateX-reverse {
+  -webkit-transform: translateX(30px);
+  transform: translateX(30px);
+}
+
+.animate.animateX.animated {
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+}
+
+.animate.animateX-reverse.animated {
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+}
+
+.animate.animateX:nth-child(1) {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+.animate.animateX:nth-child(2) {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.animate.animateX:nth-child(3) {
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+.animate.animateX:nth-child(4) {
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+.animate.animateX:nth-child(5) {
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.animate.animateX:nth-child(6) {
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+
+.animate.animateX:nth-child(7) {
+  -webkit-transition-delay: 0.7s;
+  transition-delay: 0.7s;
+}
+
+.animate.animateX:nth-child(8) {
+  -webkit-transition-delay: 0.8s;
+  transition-delay: 0.8s;
+}
+
+.animate.animateX:nth-child(9) {
+  -webkit-transition-delay: 0.9s;
+  transition-delay: 0.9s;
+}
+
+.animate.animateX:nth-child(10) {
+  -webkit-transition-delay: 1.0s;
+  transition-delay: 1.0s;
+}
+
+.animate.animateX-reverse:nth-child(1) {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+.animate.animateX-reverse:nth-child(2) {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.animate.animateX-reverse:nth-child(3) {
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+.animate.animateX-reverse:nth-child(4) {
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+.animate.animateX-reverse:nth-child(5) {
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.animate.animateX-reverse:nth-child(6) {
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+
+.animate.animateX-reverse:nth-child(7) {
+  -webkit-transition-delay: 0.7s;
+  transition-delay: 0.7s;
+}
+
+.animate.animateX-reverse:nth-child(8) {
+  -webkit-transition-delay: 0.8s;
+  transition-delay: 0.8s;
+}
+
+.animate.animateX-reverse:nth-child(9) {
+  -webkit-transition-delay: 0.9s;
+  transition-delay: 0.9s;
+}
+
+.animate.animateX-reverse:nth-child(10) {
+  -webkit-transition-delay: 1.0s;
+  transition-delay: 1.0s;
+}
+
+.animate.animated {
+  opacity: 1;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+}

@@ -1,0 +1,89 @@
+@font-face {
+  font-family: 'Uni Sans';
+  font-style: normal;
+  font-weight: 900;
+  src:
+    local(''),
+    url('../fonts/UniSansHeavyCAPS.woff2') format('woff2'),
+    url('../fonts/UniSansHeavyCAPS.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Uni Neue';
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local(''),
+    url('../fonts/UniNeueRegular.woff2') format('woff2'),
+    url('../fonts/UniNeueRegular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Uni Neue';
+  font-style: italic;
+  font-weight: 400;
+  src:
+    local(''),
+    url('../fonts/UniNeueRegular-Italic.woff2') format('woff2'),
+    url('../fonts/UniNeueRegular-Italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Uni Neue';
+  font-style: normal;
+  font-weight: 700;
+  src:
+    local(''),
+    url('../fonts/UniNeueBold.woff2') format('woff2'),
+    url('../fonts/UniNeueBold.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Uni Neue';
+  font-style: italic;
+  font-weight: 700;
+  src:
+    local(''),
+    url('../fonts/UniNeueBold-Italic.woff2') format('woff2'),
+    url('../fonts/UniNeueBold-Italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Uni Neue';
+  font-style: normal;
+  font-weight: 900;
+  src:
+    local(''),
+    url('../fonts/UniNeueBlack.woff2') format('woff2'),
+    url('../fonts/UniNeueBlack.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Uni Neue';
+  font-style: normal;
+  font-weight: 800;
+  src:
+    local(''),
+    url('../fonts/UniNeueHeavy.woff2') format('woff2'),
+    url('../fonts/UniNeueHeavy.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'DIN Pro';
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local(''),
+    url('../fonts/DINPro.woff2') format('woff2'),
+    url('../fonts/DINPro.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'DIN Pro';
+  font-style: normal;
+  font-weight: 500;
+  src:
+    local(''),
+    url('../fonts/DINPro-Medium.woff2') format('woff2'),
+    url('../fonts/DINPro-Medium.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
