@@ -19,6 +19,34 @@
   overflow: hidden;
   position: relative;
 
+  span {
+    font-size: 20px;
+    padding-left: 28px;
+    padding-right: 28px;
+    position: relative;
+
+    &::before {
+      width: 16px;
+      height: 10px;
+      content: '';
+      position: absolute;
+      left: 0;
+      @include y-align;
+      @include bg;
+      background-image: url('/src/img/icons/btn-arrows-left.svg');
+    }
+    &::after {
+      width: 16px;
+      height: 10px;
+      content: '';
+      position: absolute;
+      right: 0;
+      @include y-align;
+      @include bg;
+      background-image: url('/src/img/icons/btn-arrows-right.svg');
+    }
+  }
+
   &:hover {
     background: linear-gradient(90deg, #8fff00 0%, #faff00 100%);
     box-shadow: 0px 3px 0px #539400;
