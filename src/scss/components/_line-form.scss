@@ -135,13 +135,17 @@
 
   @media (max-width: 650px) {
     font-size: 11px !important;
-    text-align: center;
+    text-align: left;
   }
 
   b {
     font-weight: 500;
     position: relative;
     padding-left: 35px;
+
+    @media (max-width: 650px) {
+      padding-left: 28px;
+    }
 
     &::before {
       @include y-align;

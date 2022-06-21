@@ -1,7 +1,7 @@
 .button {
   @include reset-btn;
-  font-size: 14px;
-  line-height: 19px;
+  font-size: 20px;
+  line-height: 1.35;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -18,6 +18,18 @@
   min-height: 57px;
   overflow: hidden;
   position: relative;
+
+  &_line-form {
+    font-size: 14px;
+
+    @media (max-width: 650px) {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 650px) {
+    font-size: 16px;
+  }
 
   span {
     font-size: 20px;

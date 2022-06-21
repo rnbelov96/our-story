@@ -1,0 +1,159 @@
+.clients {
+  @include bg;
+  background-color: #5929a6;
+  background-image: url('/src/img/bgs/clients-bg.jpg');
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  @media (max-width: 1150px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  @media (max-width: 650px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.clients__title {
+  color: #ffd5ca;
+}
+
+.clients__devider {
+  background-color: #8b8af2;
+  margin-left: 0;
+}
+
+.clients__text {
+  color: #ffffff;
+  max-width: 638px;
+  margin-bottom: 0px;
+
+  @media (max-width: 880px) {
+    margin-bottom: 20px;
+  }
+}
+
+.clients__content {
+  margin-bottom: 60px;
+
+  @include tablet-mb;
+  @include mobile-mb;
+  & > * + * {
+    @media (max-width: 880px) {
+      margin-top: 50px;
+    }
+
+    @media (max-width: 650px) {
+      margin-top: 30px;
+    }
+  }
+}
+
+.clients__review-box {
+  display: flex;
+  align-items: center;
+  gap: 95px;
+
+  @media (max-width: 880px) {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 15px;
+  }
+
+  &:nth-child(2n-1) {
+    max-width: 1037px;
+    margin-left: auto;
+
+    .clients__review-name {
+      bottom: 39px;
+      right: 102px;
+    }
+  }
+
+  &:nth-child(2n) {
+    gap: 32px;
+    max-width: 1097px;
+    flex-direction: row-reverse;
+
+    @media (max-width: 880px) {
+      flex-direction: column-reverse;
+      gap: 15px;
+    }
+
+    .clients__review-name {
+      bottom: 0px;
+      left: 64px;
+    }
+  }
+}
+
+.clients__review-text {
+  padding-left: 64px;
+  position: relative;
+  font-style: italic;
+  margin-bottom: 0;
+  color: #ffd5ca;
+
+  @media (max-width: 650px) {
+    padding-left: 50px;
+  }
+
+  &::before {
+    width: 52px;
+    height: 48px;
+    @include bg;
+    background-image: url('/src/img/icons/clients-quotes.svg');
+    position: absolute;
+    left: 0;
+    top: -20px;
+    content: '';
+
+    @media (max-width: 650px) {
+      top: -5px;
+      zoom: 0.8;
+    }
+  }
+}
+
+.clients__review-avatar-box {
+  position: relative;
+  @include max-width(234px);
+  flex-shrink: 0;
+}
+
+.clients__review-avatar {
+  width: 100%;
+  height: auto;
+}
+
+.clients__review-name {
+  background: #d32d9d;
+  border-radius: 15px;
+  padding: 15px;
+  display: inline-block;
+  position: absolute;
+  color: white;
+  margin-bottom: 0;
+  font-size: 18px;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 800;
+
+  br {
+    display: none;
+
+    @media (max-width: 650px) {
+      display: block;
+    }
+  }
+
+  @media (max-width: 650px) {
+    bottom: 0 !important;
+    left: 50% !important;
+    right: initial !important;
+    transform: translateX(-50%);
+  }
+}
