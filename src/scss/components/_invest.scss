@@ -1,0 +1,140 @@
+.invest {
+  @include bg;
+  background-image: url('/src/img/bgs/invest-bg.jpg');
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  @media (max-width: 1150px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  @media (max-width: 650px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-image: none;
+  }
+}
+
+.invest__title {
+  text-align: center;
+  color: #8b8af2;
+}
+
+.invest__devider {
+  background-color: #ffd5ca;
+}
+
+.invest__text {
+  text-align: center;
+  margin-bottom: 50px;
+
+  @include tablet-mb;
+  @include mobile-mb;
+}
+
+.invest__content {
+  max-width: 1036px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+  border-radius: 20px;
+  overflow: hidden;
+
+  @media (max-width: 650px) {
+    margin-bottom: 20px;
+  }
+
+  & > * + * {
+    border-top: 1px solid white;
+  }
+}
+
+.invest__row {
+  display: flex;
+  min-height: 70px;
+
+  @media (max-width: 650px) {
+    min-height: 60px;
+  }
+}
+
+.invest__left-text {
+  width: 62%;
+  border-right: 1px solid white;
+  padding: 5px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  b {
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+}
+
+.invest__right-text {
+  margin-bottom: 0;
+  padding: 5px;
+  width: 38%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  b {
+    font-weight: 900;
+    text-transform: uppercase;
+    color: white;
+  }
+}
+
+.invest__text {
+  &_blue {
+    background: #8b8af2;
+  }
+  &_orange {
+    background: #ffd5ca;
+  }
+  &_purple {
+    background: rgba(71, 18, 157, 0.9);
+  }
+}
+
+.invest__note {
+  padding-left: 173px;
+  position: relative;
+  margin-bottom: 0;
+  max-width: 1050px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (max-width: 650px) {
+    padding-left: 0;
+  }
+
+  &::before {
+    width: 134px;
+    height: 147px;
+    @include bg;
+    background-image: url('/src/img/icons/invest-icon.png');
+    position: absolute;
+    left: 0;
+    @include y-align;
+    content: '';
+
+    @media (max-width: 650px) {
+      position: relative;
+      top: 0;
+      transform: none;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 10px;
+    }
+  }
+}
