@@ -1,0 +1,124 @@
+.join {
+  @include bg;
+  background-color: #5929a6;
+  background-image: url('/src/img/bgs/join-bg.jpg');
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  @media (max-width: 1150px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  @media (max-width: 650px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.join__title {
+  margin-bottom: 20px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-family: 'Uni Sans';
+  font-size: 50px;
+  max-width: 944px;
+  line-height: 1;
+
+  span {
+    color: #ffd5ca;
+  }
+
+  @media (max-width: 1150px) {
+    font-size: 40px;
+  }
+
+  @media (max-width: 991px) {
+    font-size: 30px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 25px;
+  }
+}
+
+.join__subtitle {
+  background: linear-gradient(
+    90.91deg,
+    rgba(71, 18, 157, 0.9) 0%,
+    rgba(255, 188, 173, 0.9) 100%
+  );
+  border-radius: 5px;
+  margin-bottom: 40px;
+  font-size: 50px;
+  font-weight: 800;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: white;
+  @include max-width(625px);
+  line-height: 1;
+  padding-bottom: 10px;
+
+  @media (max-width: 1150px) {
+    font-size: 40px;
+  }
+
+  @media (max-width: 991px) {
+    font-size: 30px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 25px;
+  }
+
+  @media (max-width: 650px) {
+    margin-bottom: 20px;
+    padding-bottom: 4px;
+    max-width: 220px;
+  }
+}
+
+.join__text-box {
+  margin-bottom: 100px;
+
+  & > * + * {
+    margin-top: 40px;
+
+    @media (max-width: 650px) {
+      margin-top: 20px;
+    }
+  }
+
+  @include tablet-mb;
+  @include mobile-mb;
+}
+
+.join__text {
+  margin-bottom: 0;
+  color: #fdd3ee;
+  font-size: 30px;
+  line-height: 1;
+
+  &:nth-child(1) {
+    max-width: 587px;
+  }
+  &:nth-child(2) {
+    max-width: 808px;
+  }
+}
+
+.join__form {
+  padding-left: 55px;
+  padding-right: 55px;
+
+  @media (max-width: 1150px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (max-width: 650px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
