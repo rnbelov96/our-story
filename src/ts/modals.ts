@@ -8,17 +8,18 @@ const openedModalList: Element[] = [];
 
 const modalFormInfoList = [
   {
-    title: 'Оставьте заявку на бесплатную консультацию',
-    button: 'Получить консультацию',
+    title:
+      'Оставьте данные, менеджер с вами свяжется в ближайшее рабочее время и предоставит подробные материалы',
+    button: 'Получить',
   },
   {
-    title: 'Получите презентацию франшизы и финансовую модель',
-    button: 'Получить презентацию',
+    title: 'Получите презентацию и финансовую модель франшизы',
+    button: 'Получить',
   },
   {
     title: `Уже уходите? <br> 
-      Получите бесплатную презентацию на почту.`,
-    button: 'Получить презентацию',
+      Получите бесплатную презентацию франшизы на почту.`,
+    button: 'Получить',
   },
 ];
 
@@ -28,22 +29,29 @@ const closeModal = (modalEl: HTMLDivElement) => {
   modalEl.style.pointerEvents = 'none';
   document.body.style.overflowY = 'auto';
   document.body.style.paddingRight = '0px';
-  modalEl.children[0].classList.remove(`animate__${animationNameList[animationNumber]}`);
+  modalEl.children[0].classList.remove(
+    `animate__${animationNameList[animationNumber]}`,
+  );
 };
 
 const openModal = (modalEl: HTMLDivElement) => {
   if (window.innerWidth > document.body.clientWidth) {
-    document.body.style.paddingRight = `${window.innerWidth - document.body.clientWidth}px`;
+    document.body.style.paddingRight = `${
+      window.innerWidth - document.body.clientWidth
+    }px`;
   }
   modalEl.style.opacity = '1';
   modalEl.style.overflowY = 'auto';
   modalEl.style.pointerEvents = 'auto';
   document.body.style.overflowY = 'hidden';
-  modalEl.children[0].classList.add(`animate__${animationNameList[animationNumber]}`);
+  modalEl.children[0].classList.add(
+    `animate__${animationNameList[animationNumber]}`,
+  );
 };
 
 const modalElList = document.querySelectorAll('.modal');
 const [formModalEl, policyModalEl, youtubeModalEl] = modalElList;
+const formEl = formModalEl.querySelector('.modal-form');
 
 // Для каждого модального видео создать 2 таких переменных
 const youtubeModalWrapperEl = youtubeModalEl?.querySelector(
@@ -51,13 +59,20 @@ const youtubeModalWrapperEl = youtubeModalEl?.querySelector(
 ) as HTMLDivElement;
 let isYoutubeModalOpened = false;
 
-const formTitleEl = formModalEl.querySelector('.js-modal-form-title') as HTMLSpanElement;
-const formBtnEl = formModalEl.querySelector('.js-modal-form-btn') as HTMLButtonElement;
+const formTitleEl = formModalEl.querySelector(
+  '.js-modal-form-title',
+) as HTMLSpanElement;
+const formBtnEl = formModalEl.querySelector(
+  '.js-modal-form-btn',
+) as HTMLButtonElement;
 
 const modalWrapperElList = document.querySelectorAll('.modal__center-wrapper');
 modalElList.forEach(modalEl => {
   modalEl.addEventListener('click', (e: Event) => {
-    if (e.target === e.currentTarget || [...modalWrapperElList].includes(e.target as Element)) {
+    if (
+      e.target === e.currentTarget ||
+      [...modalWrapperElList].includes(e.target as Element)
+    ) {
       const clickedModal = e.currentTarget as HTMLDivElement;
       // Если модальных видео несколько, проверить каждое
       if (clickedModal === youtubeModalEl) {
@@ -92,6 +107,12 @@ policyBtnElList.forEach(el => {
 const callbackBtnElList = document.querySelectorAll('.js-callback');
 callbackBtnElList.forEach(btn => {
   btn.addEventListener('click', () => {
+    if (formEl) {
+      formEl.classList.remove('modal-form_callback');
+      formEl.classList.remove('modal-form_present');
+      formEl.classList.remove('modal-form_leave');
+      formEl.classList.add('modal-form_callback');
+    }
     openedModalList.unshift(formModalEl);
     formTitleEl.textContent = modalFormInfoList[0].title;
     formBtnEl.textContent = modalFormInfoList[0].button;
@@ -102,6 +123,12 @@ callbackBtnElList.forEach(btn => {
 const presentBtnElList = document.querySelectorAll('.js-present');
 presentBtnElList.forEach(btn => {
   btn.addEventListener('click', () => {
+    if (formEl) {
+      formEl.classList.remove('modal-form_callback');
+      formEl.classList.remove('modal-form_present');
+      formEl.classList.remove('modal-form_leave');
+      formEl.classList.add('modal-form_present');
+    }
     openedModalList.unshift(formModalEl);
     formTitleEl.textContent = modalFormInfoList[1].title;
     formBtnEl.textContent = modalFormInfoList[1].button;
@@ -114,6 +141,12 @@ let isLeaveModalOpened = false;
 document.addEventListener('mouseleave', e => {
   if (e.clientY < 10 && !isLeaveModalOpened) {
     isLeaveModalOpened = true;
+    if (formEl) {
+      formEl.classList.remove('modal-form_callback');
+      formEl.classList.remove('modal-form_present');
+      formEl.classList.remove('modal-form_leave');
+      formEl.classList.add('modal-form_leave');
+    }
     openedModalList.unshift(formModalEl);
     formTitleEl.innerHTML = modalFormInfoList[2].title;
     formBtnEl.textContent = modalFormInfoList[2].button;

@@ -40,6 +40,10 @@
   color: #fdd3ee;
   line-height: 1.21;
 
+  &_thanks {
+    color: black;
+  }
+
   @media (max-width: 650px) {
     display: none;
   }
@@ -102,6 +106,12 @@
   font-size: 15px;
   color: white;
   text-decoration: underline;
+
+  &_thanks {
+    color: black;
+    text-align: center;
+    text-decoration: none;
+  }
 
   &_black {
     color: black;

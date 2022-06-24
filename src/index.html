@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Франшиза «»</title>
+    <title>Франшиза сервиса дополненной реальности</title>
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
@@ -42,7 +42,8 @@
                 <p class="header__text">Технологичная франшиза без локации</p>
               </div>
               <div class="header__contact-box">
-                <a href="tel:+" class="header__phone">+7 (914) 711-36-43</a
+                <a href="tel:+79147113643" class="header__phone"
+                  >+7 (914) 711-36-43</a
                 ><button class="header__callback js-callback">
                   Заказать звонок
                 </button>
@@ -285,7 +286,7 @@
                 Получите детальную информацию о сценариях ведения переговоров с
                 Клиентами
               </p>
-              <button class="button button_arrow steps__btn">
+              <button class="button button_arrow steps__btn js-present">
                 <span>Получить информацию</span>
               </button>
             </div>
@@ -404,7 +405,7 @@
               Развивайте компанию на одном из&nbsp;самых&nbsp;растущих рынков
               последних лет вместе с экспертами Our Story
             </p>
-            <button class="button button_arrow ar__btn">
+            <button class="button button_arrow ar__btn js-present">
               <span>Получить консультацию</span>
             </button>
           </div>
@@ -1024,17 +1025,17 @@
                     id="lfpj"
                   />
                 </div>
-                <div class="line-form__input-box">
-                  <label for="lfej" class="visually-hidden"
-                    >Введите email</label
+                <div class="modal-form__input-box modal-form__input-box_city">
+                  <label for="lfef" class="visually-hidden"
+                    >Введите город</label
                   >
                   <input
-                    type="email"
-                    placeholder="bestpartner@album-pri..."
-                    name="email"
-                    data-type="email"
-                    class="line-form__input"
-                    id="lfej"
+                    type="text"
+                    placeholder="Ваш город"
+                    name="city"
+                    data-type="city"
+                    class="modal-form__input"
+                    id="lfef"
                   />
                 </div>
                 <div class="line-form__input-box">
@@ -1084,7 +1085,9 @@
           </div>
           <div class="footer__right-side">
             <div class="header__contact-box">
-              <a href="tel:+" class="header__phone header__phone_black"
+              <a
+                href="tel:+79147113643"
+                class="header__phone header__phone_black"
                 >+7 (914) 711-36-43</a
               ><button
                 class="header__callback header__callback_black js-callback"
@@ -1124,10 +1127,68 @@
             class="js-modal-btn-hidden"
             hidden
           />
-          <h3 class="modal-form__title js-modal-form-title"></h3>
-          <button class="button button_modal-form js-modal-form-btn">
-            Получить документацию
-          </button>
+          <div class="modal-form__wrapper">
+            <h3 class="modal-form__title js-modal-form-title">
+              Узнайте больше информации о франшизе Our Story
+            </h3>
+            <div class="modal-form__right-side">
+              <div class="modal-form__content">
+                <div class="modal-form__input-container">
+                  <div class="modal-form__input-box">
+                    <label for="lfpm" class="visually-hidden"
+                      >Введите номер телефона</label
+                    >
+                    <input
+                      type="tel"
+                      placeholder="+7 (___) ___ ____"
+                      name="phone"
+                      data-type="phone"
+                      class="modal-form__input"
+                      id="lfpm"
+                    />
+                  </div>
+                  <div class="modal-form__input-box">
+                    <label for="lfem" class="visually-hidden"
+                      >Введите email</label
+                    >
+                    <input
+                      type="email"
+                      placeholder="bestpartner@album-pri..."
+                      name="email"
+                      data-type="email"
+                      class="modal-form__input"
+                      id="lfem"
+                    />
+                  </div>
+                  <div class="modal-form__input-box">
+                    <label for="lfnm" class="visually-hidden"
+                      >Введите имя</label
+                    >
+                    <input
+                      type="text"
+                      placeholder="Максим Сергеевич"
+                      name="name"
+                      data-type="name"
+                      class="modal-form__input"
+                      id="lfnm"
+                    />
+                  </div>
+                </div>
+                <button
+                  type="submit"
+                  class="button button_modal-form js-modal-form-btn"
+                >
+                  Получить презентацию и&nbsp;финансовую модель
+                </button>
+              </div>
+              <p class="modal-form__text">
+                <b>Я</b> подтверждаю, что ознакомлен, и даю согласие на
+                обработку персональных данных на условиях и для целей,
+                определяемых
+                <span class="js-policy"> Политикой конфиденциальности. </span>
+              </p>
+            </div>
+          </div>
           <button
             data-modal-close=""
             class="modal__close"
@@ -1158,8 +1219,7 @@
           <li class="priv-policy__item">
             2. Настоящая политика Оператора в отношении обработки персональных
             данных (далее – Политика) применяется ко всей информации, которую
-            Оператор может получить о посетителях веб-сайта компании «Название
-            Компании».
+            Оператор может получить о посетителях веб-сайта компании Our Story (ИП Макеев Максим Сергеевич, ИНН 251111172460).
           </li>
         </ol>
 
@@ -1285,7 +1345,7 @@
             новых продуктах и услугах, специальных предложениях и различных
             событиях. Пользователь всегда может отказаться от получения
             информационных сообщений, направив Оператору письмо на адрес
-            электронной почты с доменом email@mail.ru с пометкой «Отказ от
+            электронной почты с доменом makeev_maksim@mail.ru с пометкой «Отказ от
             уведомлений о новых продуктах и услугах и специальных предложениях».
           </li>
           <li class="priv-policy__item">
